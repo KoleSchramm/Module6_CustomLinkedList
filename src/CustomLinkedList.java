@@ -17,12 +17,12 @@ public class CustomLinkedList {
         }
     }
 
-    public void remove(int data){
+    public void delete(int data){
         //If list is empty, do nothing
         if(head == null){
             return;
         }
-        //If removed data is head, unlink head
+        //If deleted data is head, unlink head
         if(head.data == data){
             head = head.next;
             return;
@@ -32,7 +32,7 @@ public class CustomLinkedList {
         while ((current.next != null) && (current.next.data!=data)){
             current = current.next;
         }
-        //If current node is data to be removed, unlink node
+        //If current node is data to be deleted, unlink node
         if (current.next != null) {
             current.next = current.next.next;
         }
