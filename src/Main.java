@@ -12,7 +12,22 @@ public class Main {
         linkedList.insert(2);
         linkedList.insert(3);
 
+        // Iterate and display elements
+        Iterator<Integer> iterator2 = linkedList.iterator();
+        while (iterator2.hasNext()) {
+            System.out.print(iterator2.next() + " ");
+        }
+        System.out.println();
+
         linkedList.delete(2);
+        linkedList.delete(1);
+
+        // Iterate and display elements
+        Iterator<Integer> iterator3 = linkedList.iterator();
+        while (iterator3.hasNext()) {
+            System.out.print(iterator3.next() + " ");
+        }
+        System.out.println();
 
         //Insert integers from text file
         File file = new File("src/integers");
