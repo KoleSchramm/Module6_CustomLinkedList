@@ -38,10 +38,6 @@ public class CustomLinkedList {
         }
     }
 
-
-
-
-
     public Iterator<Integer> iterator() {
         return new LinkedListIterator();
     }
